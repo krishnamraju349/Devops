@@ -22,15 +22,7 @@
          </profile>
          </profiles>
          
-         <servers>
-    <server>
-        <id>nexus</id>
-        <username>admin</username>
-        <password>admin123</password>
-     </server></servers>
-  <description>Just a pom that makes it easy to build both projects at the same time.</description>
-123
-  <modules>
+       <modules>
     <module>multi-module</module>
     <module>single-module</module>
   </modules>
