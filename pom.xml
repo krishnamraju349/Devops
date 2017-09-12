@@ -8,6 +8,26 @@
   <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
   <name>Parent</name>
+         <profiles>
+        <profile>
+               <id>sonar</id>
+               <activation>
+                      <activeByDefault>true</activeByDefault>
+                      </activation>
+               <properties>
+                      <sonar.host.url>
+                             http://localhost:9000
+                             </sonar.host.url>
+                      </properties>
+         </profile>
+         </profiles>
+         
+         <servers>
+    <server>
+        <id>nexus</id>
+        <username>admin</username>
+        <password>admin123</password>
+     </server></servers>
   <description>Just a pom that makes it easy to build both projects at the same time.</description>
 123
   <modules>
